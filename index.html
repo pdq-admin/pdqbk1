@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>未来视界 - 科幻博客</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">未来视界</div>
+                <ul>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#articles">文章</a></li>
+                    <li><a href="#about">关于</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1>探索科技与未来</h1>
+                <p>在这里，我们一起畅想未来，探讨科技</p>
+                <a href="snake.html" class="game-button">玩贪吃蛇游戏</a>
+            </section>
+
+            <section class="articles">
+                <article class="post">
+                    <h2>人工智能的未来发展</h2>
+                    <div class="post-meta">发布于 2024-03-21</div>
+                    <p>在不久的将来，人工智能将如何改变我们的生活？让我们一起探讨...</p>
+                    <a href="#" class="read-more">阅读更多</a>
+                </article>
+
+                <article class="post">
+                    <h2>太空殖民：人类的下一步</h2>
+                    <div class="post-meta">发布于 2024-03-20</div>
+                    <p>随着太空技术的发展，人类移民火星的梦想越来越接近现实...</p>
+                    <a href="#" class="read-more">阅读更多</a>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 未来视界. 版权所有</p>
+        </footer>
+    </div>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h3>实时聊天</h3>
+            <button class="minimize-btn">−</button>
+        </div>
+        <div class="online-users">
+            在线用户: <span id="userCount">0</span>
+        </div>
+        <div class="chat-messages" id="messages"></div>
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="输入消息...">
+            <button onclick="sendMessage()">发送</button>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
